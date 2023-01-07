@@ -1,0 +1,26 @@
+score_sectionA,score_sectionB,score_final,Expected Result
+0,0,0,Fail
+0,0,1,Fail
+0,0,20,Fail
+0,0,39,Fail
+0,0,40,Fail
+0,1,0,Fail
+0,1,1,Fail
+0,1,20,Fail
+0,1,39,Fail
+0,1,40,Fail
+0,15,0,Fail
+0,15,1,Fail
+0,15,20,Fail
+0,15,39,Pass
+0,15,40,Pass
+0,29,0,Fail
+0,29,1,Fail
+0,29,20,Fail
+0,29,39,Good
+0,29,40,Good
+0,30,0,Fail
+0,30,1,Fail
+0,30,20,Pass
+0,30,39,Good
+0,30,40,Excellent

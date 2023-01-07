@@ -1,0 +1,574 @@
+Kind,Name,PercentLackOfCohesion,MaxNesting,MaxInheritanceTree,MaxCyclomatic,CountLineComment,CountLineCode,CountClassCoupled,CountDeclInstanceVariable
+File,Character.java,,0,,1,0,120,,16
+File,CharacterModel.java,,0,,1,0,148,,18
+File,Characterlist.java,,0,,1,0,9,,1
+File,ConfFileParser.java,,4,,7,25,57,,3
+File,Constants.java,,0,,0,7,42,,0
+File,ControlPointModel.java,,0,,1,0,84,,10
+File,DataReader.java,,1,,2,46,35,,0
+File,Database.java,,3,,5,25,341,,4
+File,Database.java,,3,,5,25,342,,4
+File,GameClient.java,,5,,7,92,140,,11
+File,GamePacket.java,,0,,2,20,37,,1
+File,GamePacketStream.java,,1,,3,34,86,,0
+File,GameRequest.java,,2,,3,21,59,,5
+File,GameRequestTable.java,,2,,3,25,49,,0
+File,GameResponse.java,,2,,3,11,23,,2
+File,GameServer.java,,4,,5,121,151,,5
+File,GameServerConf.java,,0,,1,6,15,,1
+File,Npc.java,,0,,1,1,55,,5
+File,RequestCharacterAttack.java,,2,,3,3,35,,2
+File,RequestCharacterChangeHealth.java,,2,,3,3,35,,2
+File,RequestCharacterCreation.java,,3,,4,3,53,,5
+File,RequestChat.java,,2,,3,3,36,,4
+File,RequestControlPointCapture.java,,2,,3,3,34,,3
+File,RequestControlPointState.java,,2,,3,3,34,,3
+File,RequestFloat.java,,0,,1,6,23,,2
+File,RequestHeartbeat.java,,1,,2,3,31,,2
+File,RequestInt.java,,0,,1,6,23,,2
+File,RequestLogin.java,,4,,5,13,70,,4
+File,RequestLogout.java,,0,,1,3,27,,1
+File,RequestMove.java,,2,,5,4,63,,6
+File,RequestPlayGame.java,,2,,5,5,54,,6
+File,RequestRegistration.java,,1,,2,3,37,,4
+File,RequestShort.java,,0,,1,6,23,,2
+File,RequestString.java,,0,,1,6,23,,2
+File,ResponseAuth.java,,2,,3,5,49,,3
+File,ResponseChangeResourcePoints.java,,0,,1,5,32,,3
+File,ResponseCharacterAttack.java,,2,,3,5,36,,2
+File,ResponseCharacterChangeHealth.java,,2,,3,5,49,,4
+File,ResponseCharacterCreation.java,,0,,1,7,26,,2
+File,ResponseCharacterMovement.java,,2,,3,5,78,,8
+File,ResponseChat.java,,0,,1,5,32,,3
+File,ResponseControlPointCapture.java,,0,,1,5,42,,4
+File,ResponseControlPointState.java,,0,,1,5,42,,4
+File,ResponseDestroyGolemControlPoint.java,,0,,1,5,24,,2
+File,ResponseDestroyNPC.java,,0,,1,5,24,,2
+File,ResponseFloat.java,,0,,1,1,21,,1
+File,ResponseGolemPiece.java,,0,,1,5,24,,2
+File,ResponseHeartbeat.java,,0,,1,6,24,,2
+File,ResponseInt.java,,0,,1,1,21,,1
+File,ResponseLogin.java,,0,,1,1,27,,2
+File,ResponseLogout.java,,0,,1,3,25,,2
+File,ResponsePlayGame.java,,2,,3,1,35,,3
+File,ResponseRegistration.java,,0,,1,3,24,,2
+File,ResponseRemoveUser.java,,0,,1,5,24,,2
+File,ResponseRenderCharacter.java,,0,,1,5,32,,3
+File,ResponseShort.java,,0,,1,1,21,,1
+File,ResponseSpawnGolem.java,,0,,1,5,24,,2
+File,ResponseSpawnGolemControlPoint.java,,0,,1,5,24,,2
+File,ResponseSpawnGuards.java,,0,,1,5,40,,4
+File,ResponseString.java,,0,,1,1,21,,1
+File,UserList.java,,0,,1,0,9,,1
+File,UserModel.java,,0,,1,0,43,,5
+Package,configuration,,0,,1,6,15,,1
+Public Class,configuration.GameServerConf,0,0,1,1,5,11,3,1
+Public Constructor,configuration.GameServerConf.GameServerConf,,0,,,0,3,,
+Public Method,configuration.GameServerConf.getPortNumber,,0,,,0,3,,
+Public Method,configuration.GameServerConf.setConfRecords,,0,,,0,3,,
+Package,core,,5,,7,263,974,,24
+Public Class,core.Database,52,3,1,5,25,336,11,4
+Public Class,core.Database,52,3,1,5,25,337,11,4
+Public Method,core.Database.CanCreateCharacter,,2,,,0,20,,
+Public Method,core.Database.CreateCharacter,,3,,,2,33,,
+Public Method,core.Database.CreateCharacter,,3,,,2,33,,
+Public Constructor,core.Database.Database,,1,,,2,9,,
+Public Constructor,core.Database.Database,,1,,,2,9,,
+Public Method,core.Database.GetcharacterLoc,,3,,,1,43,,
+Public Method,core.Database.GetcharacterLoc,,3,,,1,43,,
+Public Method,core.Database.ValidateUser,,2,,,1,22,,
+Public Method,core.Database.ValidateUser,,2,,,1,22,,
+Public Method,core.Database.char_name,,3,,,0,22,,
+Public Method,core.Database.char_name,,3,,,0,22,,
+Private Method,core.Database.close,,1,,,1,9,,
+Private Method,core.Database.close,,1,,,1,9,,
+Public Method,core.Database.createAccount,,2,,,2,24,,
+Public Method,core.Database.createAccount,,2,,,2,24,,
+Public Method,core.Database.getAllConnectedCharacter,,2,,,0,16,,
+Public Method,core.Database.getAllConnectedCharacter,,2,,,0,16,,
+Public Method,core.Database.getCharacterfromUser,,2,,,0,16,,
+Public Method,core.Database.getCharacterfromUser,,2,,,0,17,,
+Public Method,core.Database.getConnectedusers,,2,,,0,12,,
+Public Method,core.Database.getConnectedusers,,2,,,0,12,,
+Public Method,core.Database.getConnectedusers_Id,,2,,,0,12,,
+Public Method,core.Database.getConnectedusers_Id,,2,,,0,12,,
+Public Method,core.Database.getUid,,2,,,0,14,,
+Public Method,core.Database.getUid,,2,,,0,14,,
+Public Method,core.Database.getUserbyUsername,,2,,,0,17,,
+Public Method,core.Database.getUserbyUsername,,2,,,0,17,,
+Public Method,core.Database.getUsername,,2,,,0,15,,
+Public Method,core.Database.getUsername,,2,,,0,15,,
+Public Method,core.Database.getuid,,2,,,0,16,,
+Public Method,core.Database.getuid,,2,,,0,16,,
+Public Method,core.Database.hasAccount,,2,,,0,19,,
+Public Method,core.Database.hasAccount,,2,,,0,19,,
+Public Method,core.Database.hasCharacter,,2,,,0,20,,
+Public Method,core.Database.startConnection,,1,,,3,11,,
+Public Method,core.Database.startConnection,,1,,,3,11,,
+Public Class,core.GameClient,82,5,2,7,87,119,22,11
+Public Constructor,core.GameClient.GameClient,,0,,,8,4,,
+Public Constructor,core.GameClient.GameClient,,0,,,0,10,,
+Public Method,core.GameClient.addResponseForUpdate,,0,,,0,3,,
+Public Method,core.GameClient.clearUpdateBuffer,,0,,,3,3,,
+Public Method,core.GameClient.getIP,,0,,,0,3,,
+Public Method,core.GameClient.getOutputStream,,0,,,0,3,,
+Public Method,core.GameClient.getServer,,0,,,0,3,,
+Public Method,core.GameClient.getUm,,0,,,0,3,,
+Public Method,core.GameClient.getUpdates,,0,,,5,8,,
+Public Method,core.GameClient.run,,5,,,52,44,,
+Public Method,core.GameClient.setUm,,0,,,0,3,,
+Public Method,core.GameClient.stopClient,,0,,,0,3,,
+Public Method,core.GameClient.toString,,2,,,0,16,,
+Public Class,core.GameServer,83,4,1,5,115,134,18,5
+Public Constructor,core.GameServer.GameServer,,0,,,14,9,,
+Public Method,core.GameServer.addResponseForAllOnlinePlayers,,2,,,18,8,,
+Public Method,core.GameServer.addResponseForAllPlayerInTheSameTeam,,4,,,6,18,,
+Public Method,core.GameServer.addToActiveThreads,,0,,,0,3,,
+Private Method,core.GameServer.configure,,0,,,3,4,,
+Public Method,core.GameServer.deletePlayerThreadOutOfActiveThreads,,0,,,0,3,,
+Public Method,core.GameServer.getActivePlayer,,0,,,0,3,,
+Public Method,core.GameServer.getActivePlayers,,0,,,0,3,,
+Public Method,core.GameServer.getCplist,,0,,,0,3,,
+Public Static Method,core.GameServer.getInstance,,0,,,0,3,,
+Public Method,core.GameServer.getNumberOfCurrentThreads,,0,,,6,3,,
+Private Method,core.GameServer.getReady,,0,,,4,4,,
+Public Method,core.GameServer.getThreadByPlayerID,,2,,,6,8,,
+Public Method,core.GameServer.getThreadsByTeam,,3,,,6,12,,
+Private Method,core.GameServer.isReady,,0,,,5,3,,
+Public Static Method,core.GameServer.main,,1,,,0,7,,
+Public Method,core.GameServer.removeActivePlayer,,0,,,0,3,,
+Private Method,core.GameServer.run,,3,,,10,23,,
+Public Method,core.GameServer.setActivePlayer,,0,,,0,3,,
+Public Method,core.GameServer.setCplist,,0,,,0,3,,
+File,cs594db.sql,,0,,0,30,32,,
+File,demo_data.java,,2,,14,12,45,,0
+Package,metadata,,2,,3,32,211,,16
+Public Class,metadata.Character,93,0,1,1,0,117,2,16
+Public Constructor,metadata.Character.Character,,0,,,0,4,,
+Public Method,metadata.Character.getC_id,,0,,,0,3,,
+Public Method,metadata.Character.getCmlist,,0,,,0,3,,
+Public Method,metadata.Character.getCtype,,0,,,0,3,,
+Public Method,metadata.Character.getH,,0,,,0,3,,
+Public Method,metadata.Character.getHitpoint,,0,,,0,3,,
+Public Method,metadata.Character.getMovement,,0,,,0,3,,
+Public Method,metadata.Character.getMovementspeed,,0,,,0,3,,
+Public Method,metadata.Character.getName,,0,,,0,3,,
+Public Method,metadata.Character.getRewardpoint,,0,,,0,3,,
+Public Method,metadata.Character.getSkill,,0,,,0,3,,
+Public Method,metadata.Character.getTeamid,,0,,,0,3,,
+Public Method,metadata.Character.getUsername,,0,,,0,3,,
+Public Method,metadata.Character.getXpos,,0,,,0,3,,
+Public Method,metadata.Character.getYpos,,0,,,0,3,,
+Public Method,metadata.Character.getZpos,,0,,,0,3,,
+Public Method,metadata.Character.isIsAttacking,,0,,,0,3,,
+Public Method,metadata.Character.setC_id,,0,,,0,3,,
+Public Method,metadata.Character.setCmlist,,0,,,0,3,,
+Public Method,metadata.Character.setCtype,,0,,,0,3,,
+Public Method,metadata.Character.setH,,0,,,0,3,,
+Public Method,metadata.Character.setHitpoint,,0,,,0,3,,
+Public Method,metadata.Character.setIsAttacking,,0,,,0,3,,
+Public Method,metadata.Character.setMovement,,0,,,0,3,,
+Public Method,metadata.Character.setMovementspeed,,0,,,0,3,,
+Public Method,metadata.Character.setName,,0,,,0,3,,
+Public Method,metadata.Character.setRewardpoint,,0,,,0,3,,
+Public Method,metadata.Character.setSkill,,0,,,0,3,,
+Public Method,metadata.Character.setTeamid,,0,,,0,3,,
+Public Method,metadata.Character.setUsername,,0,,,0,3,,
+Public Method,metadata.Character.setXpos,,0,,,0,3,,
+Public Method,metadata.Character.setYpos,,0,,,0,3,,
+Public Method,metadata.Character.setZpos,,0,,,0,3,,
+Public Class,metadata.Constants,0,0,1,0,7,41,1,0
+Public Class,metadata.GameRequestTable,0,2,1,3,23,45,8,0
+Public Static Method,metadata.GameRequestTable.add,,1,,,8,7,,
+Public Static Method,metadata.GameRequestTable.get,,2,,,6,15,,
+Public Static Method,metadata.GameRequestTable.init,,0,,,4,20,,
+Package,model,,0,,1,1,348,,40
+Public Class,model.CharacterModel,93,0,1,1,0,146,1,18
+Public Constructor,model.CharacterModel.CharacterModel,,0,,,0,7,,
+Public Constructor,model.CharacterModel.CharacterModel,,0,,,0,8,,
+Public Constructor,model.CharacterModel.CharacterModel,,0,,,0,3,,
+Public Method,model.CharacterModel.getAttackId,,0,,,0,3,,
+Public Method,model.CharacterModel.getC_id,,0,,,0,3,,
+Public Method,model.CharacterModel.getCtype,,0,,,0,3,,
+Public Method,model.CharacterModel.getH,,0,,,0,3,,
+Public Method,model.CharacterModel.getHealth,,0,,,0,3,,
+Public Method,model.CharacterModel.getHitpoint,,0,,,0,3,,
+Public Method,model.CharacterModel.getMovement,,0,,,0,3,,
+Public Method,model.CharacterModel.getMovementspeed,,0,,,0,3,,
+Public Method,model.CharacterModel.getName,,0,,,0,3,,
+Public Method,model.CharacterModel.getRewardpoint,,0,,,0,3,,
+Public Method,model.CharacterModel.getSkill,,0,,,0,3,,
+Public Method,model.CharacterModel.getTeamid,,0,,,0,3,,
+Public Method,model.CharacterModel.getUsername,,0,,,0,3,,
+Public Method,model.CharacterModel.getXpos,,0,,,0,3,,
+Public Method,model.CharacterModel.getYpos,,0,,,0,3,,
+Public Method,model.CharacterModel.getZpos,,0,,,0,3,,
+Public Method,model.CharacterModel.isIsActive,,0,,,0,3,,
+Public Method,model.CharacterModel.isIsAttacking,,0,,,0,3,,
+Public Method,model.CharacterModel.setAttackId,,0,,,0,3,,
+Public Method,model.CharacterModel.setC_id,,0,,,0,3,,
+Public Method,model.CharacterModel.setCtype,,0,,,0,3,,
+Public Method,model.CharacterModel.setH,,0,,,0,3,,
+Public Method,model.CharacterModel.setHealth,,0,,,0,3,,
+Public Method,model.CharacterModel.setHitpoint,,0,,,0,3,,
+Public Method,model.CharacterModel.setIsActive,,0,,,0,3,,
+Public Method,model.CharacterModel.setIsAttacking,,0,,,0,3,,
+Public Method,model.CharacterModel.setMovement,,0,,,0,3,,
+Public Method,model.CharacterModel.setMovementspeed,,0,,,0,3,,
+Public Method,model.CharacterModel.setName,,0,,,0,3,,
+Public Method,model.CharacterModel.setRewardpoint,,0,,,0,3,,
+Public Method,model.CharacterModel.setSkill,,0,,,0,3,,
+Public Method,model.CharacterModel.setTeamid,,0,,,0,3,,
+Public Method,model.CharacterModel.setUsername,,0,,,0,3,,
+Public Method,model.CharacterModel.setXpos,,0,,,0,3,,
+Public Method,model.CharacterModel.setYpos,,0,,,0,3,,
+Public Method,model.CharacterModel.setZpos,,0,,,0,3,,
+Public Class,model.Characterlist,100,0,1,1,0,7,1,1
+Public Constructor,model.Characterlist.Characterlist,,0,,,0,3,,
+Public Class,model.ControlPointModel,86,0,1,1,0,82,0,10
+Public Constructor,model.ControlPointModel.ControlPointModel,,0,,,0,13,,
+Public Constructor,model.ControlPointModel.ControlPointModel,,0,,,0,3,,
+Public Method,model.ControlPointModel.getAttackpoints,,0,,,0,3,,
+Public Method,model.ControlPointModel.getCountrolid,,0,,,0,3,,
+Public Method,model.ControlPointModel.getDefencepoints,,0,,,0,3,,
+Public Method,model.ControlPointModel.getGs_resourcepoints,,0,,,0,3,,
+Public Method,model.ControlPointModel.getOwner,,0,,,0,3,,
+Public Method,model.ControlPointModel.getState,,0,,,0,3,,
+Public Method,model.ControlPointModel.getXpos,,0,,,0,3,,
+Public Method,model.ControlPointModel.getYpos,,0,,,0,3,,
+Public Method,model.ControlPointModel.getZpos,,0,,,0,3,,
+Public Method,model.ControlPointModel.setAttackpoints,,0,,,0,3,,
+Public Method,model.ControlPointModel.setCountrolid,,0,,,0,3,,
+Public Method,model.ControlPointModel.setDefencepoints,,0,,,0,3,,
+Public Method,model.ControlPointModel.setGs_resourcepoints,,0,,,0,3,,
+Public Method,model.ControlPointModel.setOwner,,0,,,0,3,,
+Public Method,model.ControlPointModel.setState,,0,,,0,3,,
+Public Method,model.ControlPointModel.setXpos,,0,,,0,3,,
+Public Method,model.ControlPointModel.setYpos,,0,,,0,3,,
+Public Method,model.ControlPointModel.setZpos,,0,,,0,3,,
+Public Class,model.Npc,72,0,1,1,1,54,1,5
+Public Constructor,model.Npc.Npc,,0,,,1,3,,
+Public Constructor,model.Npc.Npc,,0,,,0,6,,
+Public Constructor,model.Npc.Npc,,0,,,0,8,,
+Public Method,model.Npc.getHealth,,0,,,0,3,,
+Public Method,model.Npc.getNpc_id,,0,,,0,3,,
+Public Method,model.Npc.getStatus,,0,,,0,3,,
+Public Method,model.Npc.getTargetUsername,,0,,,0,3,,
+Public Method,model.Npc.getTeam,,0,,,0,3,,
+Public Method,model.Npc.setHealth,,0,,,0,3,,
+Public Method,model.Npc.setNpc_id,,0,,,0,3,,
+Public Method,model.Npc.setStatus,,0,,,0,3,,
+Public Method,model.Npc.setTargetUsername,,0,,,0,3,,
+Public Method,model.Npc.setTeam,,0,,,0,3,,
+Public Class,model.UserList,100,0,1,1,0,7,1,1
+Public Constructor,model.UserList.UserList,,0,,,0,3,,
+Public Class,model.UserModel,80,0,1,1,0,41,3,5
+Public Constructor,model.UserModel.UserModel,,0,,,0,4,,
+Public Method,model.UserModel.getCharlist,,0,,,0,3,,
+Public Method,model.UserModel.getPassword,,0,,,0,3,,
+Public Method,model.UserModel.getUserid,,0,,,0,3,,
+Public Method,model.UserModel.getUsername,,0,,,0,3,,
+Public Method,model.UserModel.isIsConnected,,0,,,0,3,,
+Public Method,model.UserModel.setCharlist,,0,,,0,3,,
+Public Method,model.UserModel.setIsConnected,,0,,,0,3,,
+Public Method,model.UserModel.setPassword,,0,,,0,3,,
+Public Method,model.UserModel.setUserid,,0,,,0,3,,
+Public Method,model.UserModel.setUsername,,0,,,0,3,,
+Package,networking,,0,,0,0,0,,0
+Package,networking.request,,4,,14,106,705,,55
+Public Abstract Class,networking.request.GameRequest,82,2,1,3,19,49,11,5
+Public Constructor,networking.request.GameRequest.GameRequest,,0,,,0,3,,
+Public Abstract Method,networking.request.GameRequest.doBusiness,,0,,,5,1,,
+Public Method,networking.request.GameRequest.getID,,0,,,0,3,,
+Public Method,networking.request.GameRequest.getResponses,,0,,,0,3,,
+Public Method,networking.request.GameRequest.getServer,,0,,,0,3,,
+Public Abstract Method,networking.request.GameRequest.parse,,0,,,5,1,,
+Public Abstract Method,networking.request.GameRequest.respond,,0,,,5,1,,
+Public Method,networking.request.GameRequest.setDataInputStream,,0,,,0,3,,
+Public Method,networking.request.GameRequest.setGameClient,,0,,,0,3,,
+Public Method,networking.request.GameRequest.setID,,0,,,0,3,,
+Public Method,networking.request.GameRequest.setServer,,0,,,0,3,,
+Public Method,networking.request.GameRequest.toString,,2,,,0,16,,
+Public Class,networking.request.RequestCharacterAttack,37,2,2,3,3,30,8,2
+Public Constructor,networking.request.RequestCharacterAttack.RequestCharacterAttack,,0,,,0,4,,
+Public Method,networking.request.RequestCharacterAttack.doBusiness,,2,,,1,14,,
+Public Method,networking.request.RequestCharacterAttack.parse,,0,,,1,4,,
+Public Method,networking.request.RequestCharacterAttack.respond,,0,,,1,4,,
+Public Class,networking.request.RequestCharacterChangeHealth,37,2,2,3,3,30,7,2
+Public Constructor,networking.request.RequestCharacterChangeHealth.RequestCharacterChangeHealth,,0,,,0,4,,
+Public Method,networking.request.RequestCharacterChangeHealth.doBusiness,,2,,,1,14,,
+Public Method,networking.request.RequestCharacterChangeHealth.parse,,0,,,1,4,,
+Public Method,networking.request.RequestCharacterChangeHealth.respond,,0,,,1,4,,
+Public Class,networking.request.RequestCharacterCreation,50,3,2,4,3,42,10,5
+Public Constructor,networking.request.RequestCharacterCreation.RequestCharacterCreation,,0,,,0,3,,
+Public Method,networking.request.RequestCharacterCreation.doBusiness,,3,,,2,21,,
+Public Method,networking.request.RequestCharacterCreation.parse,,0,,,0,7,,
+Public Method,networking.request.RequestCharacterCreation.respond,,0,,,1,4,,
+Public Class,networking.request.RequestChat,50,2,2,3,3,31,10,4
+Public Constructor,networking.request.RequestChat.RequestChat,,0,,,0,3,,
+Public Method,networking.request.RequestChat.doBusiness,,2,,,0,13,,
+Public Method,networking.request.RequestChat.parse,,0,,,0,5,,
+Public Method,networking.request.RequestChat.respond,,0,,,1,4,,
+Public Class,networking.request.RequestControlPointCapture,41,2,2,3,3,29,6,3
+Public Constructor,networking.request.RequestControlPointCapture.RequestControlPointCapture,,0,,,0,4,,
+Public Method,networking.request.RequestControlPointCapture.doBusiness,,2,,,1,11,,
+Public Method,networking.request.RequestControlPointCapture.parse,,0,,,1,5,,
+Public Method,networking.request.RequestControlPointCapture.respond,,0,,,1,4,,
+Public Class,networking.request.RequestControlPointState,41,2,2,3,3,30,6,3
+Public Constructor,networking.request.RequestControlPointState.RequestControlPointState,,0,,,0,4,,
+Public Method,networking.request.RequestControlPointState.doBusiness,,2,,,1,12,,
+Public Method,networking.request.RequestControlPointState.parse,,0,,,1,5,,
+Public Method,networking.request.RequestControlPointState.respond,,0,,,1,4,,
+Public Class,networking.request.RequestFloat,50,0,2,1,3,19,5,2
+Public Constructor,networking.request.RequestFloat.RequestFloat,,0,,,0,3,,
+Public Method,networking.request.RequestFloat.doBusiness,,0,,,0,4,,
+Public Method,networking.request.RequestFloat.parse,,0,,,0,4,,
+Public Method,networking.request.RequestFloat.respond,,0,,,1,4,,
+Public Class,networking.request.RequestHeartbeat,87,1,2,2,3,25,5,2
+Public Constructor,networking.request.RequestHeartbeat.RequestHeartbeat,,0,,,1,4,,
+Public Method,networking.request.RequestHeartbeat.doBusiness,,1,,,1,9,,
+Public Method,networking.request.RequestHeartbeat.parse,,0,,,1,3,,
+Public Method,networking.request.RequestHeartbeat.respond,,0,,,0,5,,
+Public Class,networking.request.RequestInt,50,0,2,1,3,19,5,2
+Public Constructor,networking.request.RequestInt.RequestInt,,0,,,0,3,,
+Public Method,networking.request.RequestInt.doBusiness,,0,,,0,4,,
+Public Method,networking.request.RequestInt.parse,,0,,,0,4,,
+Public Method,networking.request.RequestInt.respond,,0,,,1,4,,
+Public Class,networking.request.RequestLogin,55,4,2,5,13,57,9,4
+Public Constructor,networking.request.RequestLogin.RequestLogin,,0,,,0,4,,
+Public Method,networking.request.RequestLogin.doBusiness,,4,,,13,37,,
+Public Method,networking.request.RequestLogin.parse,,0,,,0,5,,
+Public Method,networking.request.RequestLogin.respond,,0,,,0,4,,
+Public Class,networking.request.RequestLogout,25,0,2,1,3,21,8,1
+Public Constructor,networking.request.RequestLogout.RequestLogout,,0,,,0,5,,
+Public Method,networking.request.RequestLogout.doBusiness,,0,,,2,6,,
+Public Method,networking.request.RequestLogout.parse,,0,,,0,3,,
+Public Method,networking.request.RequestLogout.respond,,0,,,1,4,,
+Public Class,networking.request.RequestMove,45,2,2,5,4,55,8,6
+Public Constructor,networking.request.RequestMove.RequestMove,,0,,,0,4,,
+Public Method,networking.request.RequestMove.doBusiness,,2,,,2,31,,
+Public Method,networking.request.RequestMove.parse,,0,,,1,8,,
+Public Method,networking.request.RequestMove.respond,,0,,,1,4,,
+Public Class,networking.request.RequestPlayGame,79,2,2,5,5,45,10,6
+Public Constructor,networking.request.RequestPlayGame.RequestPlayGame,,0,,,0,4,,
+Public Method,networking.request.RequestPlayGame.doBusiness,,2,,,3,24,,
+Public Method,networking.request.RequestPlayGame.parse,,0,,,1,5,,
+Public Method,networking.request.RequestPlayGame.respond,,0,,,1,4,,
+Public Class,networking.request.RequestRegistration,50,1,2,2,3,31,7,4
+Public Constructor,networking.request.RequestRegistration.RequestRegistration,,0,,,0,4,,
+Public Method,networking.request.RequestRegistration.doBusiness,,1,,,1,12,,
+Public Method,networking.request.RequestRegistration.parse,,0,,,1,5,,
+Public Method,networking.request.RequestRegistration.respond,,0,,,1,4,,
+Public Class,networking.request.RequestShort,50,0,2,1,3,19,5,2
+Public Constructor,networking.request.RequestShort.RequestShort,,0,,,0,3,,
+Public Method,networking.request.RequestShort.doBusiness,,0,,,0,4,,
+Public Method,networking.request.RequestShort.parse,,0,,,0,4,,
+Public Method,networking.request.RequestShort.respond,,0,,,1,4,,
+Public Class,networking.request.RequestString,50,0,2,1,3,19,6,2
+Public Constructor,networking.request.RequestString.RequestString,,0,,,0,3,,
+Public Method,networking.request.RequestString.doBusiness,,0,,,0,4,,
+Public Method,networking.request.RequestString.parse,,0,,,0,4,,
+Public Method,networking.request.RequestString.respond,,0,,,1,4,,
+Public Class,networking.request.demo_data,0,2,1,14,12,39,6,0
+Public Static Method,networking.request.demo_data.main,,2,,,12,37,,
+Package,networking.response,,2,,3,116,844,,69
+Public Abstract Class,networking.response.GameResponse,100,2,1,3,10,20,4,2
+Public Abstract Method,networking.response.GameResponse.constructResponseInBytes,,0,,,5,1,,
+Public Method,networking.response.GameResponse.toString,,2,,,0,16,,
+Public Class,networking.response.ResponseAuth,66,2,2,3,5,43,5,3
+Public Constructor,networking.response.ResponseAuth.ResponseAuth,,0,,,0,3,,
+Public Method,networking.response.ResponseAuth.constructResponseInBytes,,2,,,5,23,,
+Public Method,networking.response.ResponseAuth.getFlag,,0,,,0,3,,
+Public Method,networking.response.ResponseAuth.setFlag,,0,,,0,3,,
+Public Method,networking.response.ResponseAuth.setPlayer,,0,,,0,3,,
+Public Method,networking.response.ResponseAuth.setStatus,,0,,,0,3,,
+Public Class,networking.response.ResponseChangeResourcePoints,61,0,2,1,5,29,2,3
+Public Constructor,networking.response.ResponseChangeResourcePoints.ResponseChangeResourcePoints,,0,,,0,4,,
+Public Method,networking.response.ResponseChangeResourcePoints.constructResponseInBytes,,0,,,5,8,,
+Public Method,networking.response.ResponseChangeResourcePoints.getFactionId,,0,,,0,3,,
+Public Method,networking.response.ResponseChangeResourcePoints.getResourceAmount,,0,,,0,3,,
+Public Method,networking.response.ResponseChangeResourcePoints.setFactionId,,0,,,0,3,,
+Public Method,networking.response.ResponseChangeResourcePoints.setResourceAmount,,0,,,0,3,,
+Public Class,networking.response.ResponseCharacterAttack,50,2,2,3,5,32,4,2
+Public Constructor,networking.response.ResponseCharacterAttack.ResponseCharacterAttack,,0,,,0,4,,
+Public Method,networking.response.ResponseCharacterAttack.constructResponseInBytes,,2,,,5,18,,
+Public Method,networking.response.ResponseCharacterAttack.getUm,,0,,,0,3,,
+Public Method,networking.response.ResponseCharacterAttack.setUm,,0,,,0,3,,
+Public Class,networking.response.ResponseCharacterChangeHealth,68,2,2,3,5,45,4,4
+Public Constructor,networking.response.ResponseCharacterChangeHealth.ResponseCharacterChangeHealth,,0,,,0,4,,
+Public Method,networking.response.ResponseCharacterChangeHealth.constructResponseInBytes,,2,,,5,17,,
+Public Method,networking.response.ResponseCharacterChangeHealth.getCharacterName,,0,,,0,3,,
+Public Method,networking.response.ResponseCharacterChangeHealth.getHealthChange,,0,,,0,3,,
+Public Method,networking.response.ResponseCharacterChangeHealth.getUm,,0,,,0,3,,
+Public Method,networking.response.ResponseCharacterChangeHealth.setCharacterName,,0,,,0,3,,
+Public Method,networking.response.ResponseCharacterChangeHealth.setHealthChange,,0,,,0,3,,
+Public Method,networking.response.ResponseCharacterChangeHealth.setUm,,0,,,0,3,,
+Public Class,networking.response.ResponseCharacterCreation,50,0,2,1,7,23,2,2
+Public Constructor,networking.response.ResponseCharacterCreation.ResponseCharacterCreation,,0,,,0,4,,
+Public Method,networking.response.ResponseCharacterCreation.constructResponseInBytes,,0,,,7,9,,
+Public Method,networking.response.ResponseCharacterCreation.getFlag,,0,,,0,3,,
+Public Method,networking.response.ResponseCharacterCreation.setFlag,,0,,,0,3,,
+Public Class,networking.response.ResponseCharacterMovement,86,2,2,3,5,73,5,8
+Public Constructor,networking.response.ResponseCharacterMovement.ResponseCharacterMovement,,0,,,0,4,,
+Public Method,networking.response.ResponseCharacterMovement.constructResponseInBytes,,2,,,5,17,,
+Public Method,networking.response.ResponseCharacterMovement.getH,,0,,,0,3,,
+Public Method,networking.response.ResponseCharacterMovement.getIsMoving,,0,,,0,3,,
+Public Method,networking.response.ResponseCharacterMovement.getUm,,0,,,0,3,,
+Public Method,networking.response.ResponseCharacterMovement.getUsername,,0,,,0,3,,
+Public Method,networking.response.ResponseCharacterMovement.getX,,0,,,0,3,,
+Public Method,networking.response.ResponseCharacterMovement.getY,,0,,,0,3,,
+Public Method,networking.response.ResponseCharacterMovement.getZ,,0,,,0,3,,
+Public Method,networking.response.ResponseCharacterMovement.setH,,0,,,0,3,,
+Public Method,networking.response.ResponseCharacterMovement.setIsMoving,,0,,,0,3,,
+Public Method,networking.response.ResponseCharacterMovement.setUm,,0,,,0,3,,
+Public Method,networking.response.ResponseCharacterMovement.setUsername,,0,,,0,3,,
+Public Method,networking.response.ResponseCharacterMovement.setX,,0,,,0,3,,
+Public Method,networking.response.ResponseCharacterMovement.setY,,0,,,0,3,,
+Public Method,networking.response.ResponseCharacterMovement.setZ,,0,,,0,3,,
+Public Class,networking.response.ResponseChat,61,0,2,1,5,29,3,3
+Public Constructor,networking.response.ResponseChat.ResponseChat,,0,,,0,4,,
+Public Method,networking.response.ResponseChat.constructResponseInBytes,,0,,,5,8,,
+Public Method,networking.response.ResponseChat.getMessage,,0,,,0,3,,
+Public Method,networking.response.ResponseChat.getUsername,,0,,,0,3,,
+Public Method,networking.response.ResponseChat.setMessage,,0,,,0,3,,
+Public Method,networking.response.ResponseChat.setUsername,,0,,,0,3,,
+Public Class,networking.response.ResponseControlPointCapture,68,0,2,1,5,38,3,4
+Public Constructor,networking.response.ResponseControlPointCapture.ResponseControlPointCapture,,0,,,0,4,,
+Public Method,networking.response.ResponseControlPointCapture.constructResponseInBytes,,0,,,5,10,,
+Public Method,networking.response.ResponseControlPointCapture.getControlPointId,,0,,,0,3,,
+Public Method,networking.response.ResponseControlPointCapture.getCp,,0,,,0,3,,
+Public Method,networking.response.ResponseControlPointCapture.getFactionId,,0,,,0,3,,
+Public Method,networking.response.ResponseControlPointCapture.setControlPointId,,0,,,0,3,,
+Public Method,networking.response.ResponseControlPointCapture.setCp,,0,,,0,3,,
+Public Method,networking.response.ResponseControlPointCapture.setFactionId,,0,,,0,3,,
+Public Class,networking.response.ResponseControlPointState,68,0,2,1,5,37,3,4
+Public Constructor,networking.response.ResponseControlPointState.ResponseControlPointState,,0,,,0,4,,
+Public Method,networking.response.ResponseControlPointState.constructResponseInBytes,,0,,,5,9,,
+Public Method,networking.response.ResponseControlPointState.getControlPointId,,0,,,0,3,,
+Public Method,networking.response.ResponseControlPointState.getControlPointState,,0,,,0,3,,
+Public Method,networking.response.ResponseControlPointState.getCp,,0,,,0,3,,
+Public Method,networking.response.ResponseControlPointState.setControlPointId,,0,,,0,3,,
+Public Method,networking.response.ResponseControlPointState.setControlPointState,,0,,,0,3,,
+Public Method,networking.response.ResponseControlPointState.setCp,,0,,,0,3,,
+Public Class,networking.response.ResponseDestroyGolemControlPoint,50,0,2,1,5,21,2,2
+Public Constructor,networking.response.ResponseDestroyGolemControlPoint.ResponseDestroyGolemControlPoint,,0,,,0,4,,
+Public Method,networking.response.ResponseDestroyGolemControlPoint.constructResponseInBytes,,0,,,5,7,,
+Public Method,networking.response.ResponseDestroyGolemControlPoint.getLocationId,,0,,,0,3,,
+Public Method,networking.response.ResponseDestroyGolemControlPoint.setLocationId,,0,,,0,3,,
+Public Class,networking.response.ResponseDestroyNPC,50,0,2,1,5,21,2,2
+Public Constructor,networking.response.ResponseDestroyNPC.ResponseDestroyNPC,,0,,,0,4,,
+Public Method,networking.response.ResponseDestroyNPC.constructResponseInBytes,,0,,,5,7,,
+Public Method,networking.response.ResponseDestroyNPC.getNpcId,,0,,,0,3,,
+Public Method,networking.response.ResponseDestroyNPC.setNpcId,,0,,,0,3,,
+Public Class,networking.response.ResponseFloat,25,0,2,1,0,18,3,1
+Public Constructor,networking.response.ResponseFloat.ResponseFloat,,0,,,0,3,,
+Public Method,networking.response.ResponseFloat.constructResponseInBytes,,0,,,0,6,,
+Public Method,networking.response.ResponseFloat.getNumber,,0,,,0,3,,
+Public Method,networking.response.ResponseFloat.setNumber,,0,,,0,3,,
+Public Class,networking.response.ResponseGolemPiece,50,0,2,1,5,21,2,2
+Public Constructor,networking.response.ResponseGolemPiece.ResponseGolemPiece,,0,,,0,4,,
+Public Method,networking.response.ResponseGolemPiece.constructResponseInBytes,,0,,,5,7,,
+Public Method,networking.response.ResponseGolemPiece.getFactionId,,0,,,0,3,,
+Public Method,networking.response.ResponseGolemPiece.setFactionId,,0,,,0,3,,
+Public Class,networking.response.ResponseHeartbeat,50,0,2,1,6,18,2,2
+Public Method,networking.response.ResponseHeartbeat.constructResponseInBytes,,0,,,5,6,,
+Public Method,networking.response.ResponseHeartbeat.setNo,,0,,,0,4,,
+Public Method,networking.response.ResponseHeartbeat.setResponse,,0,,,0,4,,
+Public Class,networking.response.ResponseInt,25,0,2,1,0,18,3,1
+Public Constructor,networking.response.ResponseInt.ResponseInt,,0,,,0,3,,
+Public Method,networking.response.ResponseInt.constructResponseInBytes,,0,,,0,6,,
+Public Method,networking.response.ResponseInt.getNumber,,0,,,0,3,,
+Public Method,networking.response.ResponseInt.setNumber,,0,,,0,3,,
+Public Class,networking.response.ResponseLogin,50,0,2,1,1,24,3,2
+Public Constructor,networking.response.ResponseLogin.ResponseLogin,,0,,,0,4,,
+Public Method,networking.response.ResponseLogin.constructResponseInBytes,,0,,,1,10,,
+Public Method,networking.response.ResponseLogin.getMessage,,0,,,0,3,,
+Public Method,networking.response.ResponseLogin.setMessage,,0,,,0,3,,
+Public Class,networking.response.ResponseLogout,50,0,2,1,3,21,3,2
+Public Constructor,networking.response.ResponseLogout.ResponseLogout,,0,,,0,4,,
+Public Method,networking.response.ResponseLogout.constructResponseInBytes,,0,,,3,7,,
+Public Method,networking.response.ResponseLogout.getUm,,0,,,0,3,,
+Public Method,networking.response.ResponseLogout.setUm,,0,,,0,3,,
+Public Class,networking.response.ResponsePlayGame,75,2,2,3,1,30,5,3
+Public Constructor,networking.response.ResponsePlayGame.ResponsePlayGame,,0,,,0,4,,
+Public Method,networking.response.ResponsePlayGame.constructResponseInBytes,,2,,,1,15,,
+Public Method,networking.response.ResponsePlayGame.getUser,,0,,,0,3,,
+Public Method,networking.response.ResponsePlayGame.setUser,,0,,,0,3,,
+Public Class,networking.response.ResponseRegistration,50,0,2,1,3,21,2,2
+Public Constructor,networking.response.ResponseRegistration.ResponseRegistration,,0,,,0,4,,
+Public Method,networking.response.ResponseRegistration.constructResponseInBytes,,0,,,3,7,,
+Public Method,networking.response.ResponseRegistration.getFlag,,0,,,0,3,,
+Public Method,networking.response.ResponseRegistration.setFlag,,0,,,0,3,,
+Public Class,networking.response.ResponseRemoveUser,50,0,2,1,5,21,3,2
+Public Constructor,networking.response.ResponseRemoveUser.ResponseRemoveUser,,0,,,0,4,,
+Public Method,networking.response.ResponseRemoveUser.constructResponseInBytes,,0,,,5,7,,
+Public Method,networking.response.ResponseRemoveUser.getCharacterName,,0,,,0,3,,
+Public Method,networking.response.ResponseRemoveUser.setCharacterName,,0,,,0,3,,
+Public Class,networking.response.ResponseRenderCharacter,61,0,2,1,5,29,3,3
+Public Constructor,networking.response.ResponseRenderCharacter.ResponseRenderCharacter,,0,,,0,4,,
+Public Method,networking.response.ResponseRenderCharacter.constructResponseInBytes,,0,,,5,8,,
+Public Method,networking.response.ResponseRenderCharacter.getCharacterName,,0,,,0,3,,
+Public Method,networking.response.ResponseRenderCharacter.getFactionId,,0,,,0,3,,
+Public Method,networking.response.ResponseRenderCharacter.setCharacterName,,0,,,0,3,,
+Public Method,networking.response.ResponseRenderCharacter.setFactionId,,0,,,0,3,,
+Public Class,networking.response.ResponseShort,25,0,2,1,0,18,3,1
+Public Constructor,networking.response.ResponseShort.ResponseShort,,0,,,0,3,,
+Public Method,networking.response.ResponseShort.constructResponseInBytes,,0,,,0,6,,
+Public Method,networking.response.ResponseShort.getNumber,,0,,,0,3,,
+Public Method,networking.response.ResponseShort.setNumber,,0,,,0,3,,
+Public Class,networking.response.ResponseSpawnGolem,50,0,2,1,5,21,2,2
+Public Constructor,networking.response.ResponseSpawnGolem.ResponseSpawnGolem,,0,,,0,4,,
+Public Method,networking.response.ResponseSpawnGolem.constructResponseInBytes,,0,,,5,7,,
+Public Method,networking.response.ResponseSpawnGolem.getControlPointId,,0,,,0,3,,
+Public Method,networking.response.ResponseSpawnGolem.setControlPointId,,0,,,0,3,,
+Public Class,networking.response.ResponseSpawnGolemControlPoint,50,0,2,1,5,21,2,2
+Public Constructor,networking.response.ResponseSpawnGolemControlPoint.ResponseSpawnGolemControlPoint,,0,,,0,4,,
+Public Method,networking.response.ResponseSpawnGolemControlPoint.constructResponseInBytes,,0,,,5,7,,
+Public Method,networking.response.ResponseSpawnGolemControlPoint.getLocationId,,0,,,0,3,,
+Public Method,networking.response.ResponseSpawnGolemControlPoint.setLocationId,,0,,,0,3,,
+Public Class,networking.response.ResponseSpawnGuards,68,0,2,1,5,37,2,4
+Public Constructor,networking.response.ResponseSpawnGuards.ResponseSpawnGuards,,0,,,0,4,,
+Public Method,networking.response.ResponseSpawnGuards.constructResponseInBytes,,0,,,5,9,,
+Public Method,networking.response.ResponseSpawnGuards.getControlPointId,,0,,,0,3,,
+Public Method,networking.response.ResponseSpawnGuards.getFactionId,,0,,,0,3,,
+Public Method,networking.response.ResponseSpawnGuards.getGuardId,,0,,,0,3,,
+Public Method,networking.response.ResponseSpawnGuards.setControlPointId,,0,,,0,3,,
+Public Method,networking.response.ResponseSpawnGuards.setFactionId,,0,,,0,3,,
+Public Method,networking.response.ResponseSpawnGuards.setGuardId,,0,,,0,3,,
+Public Class,networking.response.ResponseString,25,0,2,1,0,18,4,1
+Public Constructor,networking.response.ResponseString.ResponseString,,0,,,0,3,,
+Public Method,networking.response.ResponseString.constructResponseInBytes,,0,,,0,6,,
+Public Method,networking.response.ResponseString.getMessage,,0,,,0,3,,
+Public Method,networking.response.ResponseString.setMessage,,0,,,0,3,,
+Package,utility,,4,,7,125,215,,4
+Public Class,utility.ConfFileParser,33,4,1,7,24,47,9,3
+Public Constructor,utility.ConfFileParser.ConfFileParser,,0,,,6,3,,
+Public Method,utility.ConfFileParser.openFile,,1,,,3,8,,
+Public Method,utility.ConfFileParser.parse,,4,,,11,32,,
+Public Class,utility.DataReader,0,1,1,2,45,31,3,0
+Public Static Method,utility.DataReader.readBoolean,,1,,,8,6,,
+Public Static Method,utility.DataReader.readFloat,,1,,,8,6,,
+Public Static Method,utility.DataReader.readInt,,1,,,8,6,,
+Public Static Method,utility.DataReader.readShort,,1,,,8,6,,
+Public Static Method,utility.DataReader.readString,,0,,,8,6,,
+Public Class,utility.GamePacket,19,0,1,2,20,35,2,1
+Public Constructor,utility.GamePacket.GamePacket,,0,,,0,3,,
+Public Method,utility.GamePacket.addBoolean,,0,,,0,5,,
+Public Method,utility.GamePacket.addBytes,,0,,,0,3,,
+Public Method,utility.GamePacket.addFloat,,0,,,0,3,,
+Public Method,utility.GamePacket.addInt32,,0,,,0,3,,
+Public Method,utility.GamePacket.addLong,,0,,,0,3,,
+Public Method,utility.GamePacket.addShort16,,0,,,0,3,,
+Public Method,utility.GamePacket.addString,,0,,,0,4,,
+Public Method,utility.GamePacket.getBytes,,0,,,0,3,,
+Public Method,utility.GamePacket.size,,0,,,0,3,,
+Public Class,utility.GamePacketStream,0,1,2,3,33,81,6,0
+Constructor,utility.GamePacketStream.GamePacketStream,,0,,,2,5,,
+Public Method,utility.GamePacketStream.add,,0,,,0,3,,
+Public Method,utility.GamePacketStream.add,,1,,,7,10,,
+Public Method,utility.GamePacketStream.add,,1,,,9,12,,
+Method,utility.GamePacketStream.add,,1,,,9,16,,
+Public Method,utility.GamePacketStream.getChecksum,,1,,,1,13,,
+Public Static Method,utility.GamePacketStream.now,,0,,,0,5,,
+Public Method,utility.GamePacketStream.toByteArray,,0,,,1,7,,
+Public Method,utility.GamePacketStream.toString,,0,,,0,8,,
